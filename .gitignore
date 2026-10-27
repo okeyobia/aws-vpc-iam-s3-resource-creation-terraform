@@ -1,0 +1,43 @@
+# Terraform working directories and providers
+**/.terraform/*
+
+# State files (remote state is used; bootstrap state is local)
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Plan output
+*.tfplan
+tfplan
+*.plan
+
+# Variable files that may hold secrets (terraform.tfvars is committed intentionally)
+*.auto.tfvars
+secret*.tfvars
+*.secret.tfvars
+
+# Local overrides
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI config
+.terraformrc
+terraform.rc
+
+# Environment / credentials
+.env
+.env.*
+*.pem
+*.key
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
